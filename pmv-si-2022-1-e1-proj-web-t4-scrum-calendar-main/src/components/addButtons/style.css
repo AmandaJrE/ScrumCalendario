@@ -1,0 +1,68 @@
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+#btn-proj:hover {
+  background-color: rgb(214, 214, 214);
+}
+
+#btn-rotin:hover {
+  background-color: rgb(80, 80, 80);
+}
+
+#btn-event:hover {
+  background-color: rgb(80, 80, 80);
+}
+
+#btn-proj {
+  background-color: rgb(80, 80, 80);
+}
+
+#btn-rotin,
+#btn-event {
+  background-color: rgb(214, 214, 214);
+}
+
+.form-container {
+  height: 100%;
+  width: 100%;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-container > * {
+  width: 90%;
+  margin: 5px;
+}
+
+.form-container span {
+  text-align: center;
+  font-size: 1.7em;
+  font-weight: bold;
+  font-family: sans-serif;
+  user-select: none;
+  color: gray;
+}
+
+.form-container .btn,
+.form-container .button-container .button {
+  padding: 5px;
+  border: none;
+  border-radius: 4px;
+}
+
+.btn {
+  text-align: center;
+  font-size: 1.1em;
+  font-weight: lighter;
+  font-family: sans-serif;
+  user-select: none;
+  color: rgb(253, 253, 253);
+  cursor: pointer;
+}

@@ -1,0 +1,121 @@
+body {
+
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.Week_post{
+    width: 100%;
+    height: 100%;
+}
+
+.Form_container{
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.Form_container > *{
+    width: 90%;
+    margin: 5px 0;
+}
+
+h1{
+
+    text-align: center;
+    font-size: 1.7em;
+    font-weight: bold;
+    font-family: sans-serif;
+    user-select: none;
+    color: gray;
+
+}
+
+.entrega-item { /*parte das entregas*/
+    
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 4px;
+    color: #AEAEAE;
+    background-color: #F4F4F4;
+    box-shadow: -1px 3px 4px 0px rgb(0 0 0 / 20%);
+    
+}
+
+.entregas .btn-entregas{ 
+
+
+    box-shadow: none;
+    align-items: center; 
+    color:#7C7C7C;
+    border: none;
+    background-color: #F4F4F4;
+    cursor: pointer;
+
+}
+
+.button{
+
+    font-size: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;  
+    align-items: baseline;
+
+}
+
+.button *{
+
+    padding: 5px;
+    margin: 5px;
+    border-radius: 4px;
+
+}
+
+.btn-cancel:hover, .btn-next:hover {
+
+    box-shadow: -1px 3px 4px 0px rgb(0 0 0 / 20%);
+    cursor: pointer;
+
+}
+
+.btn-next:active, .btn-cancel:active{
+
+    box-shadow: none;
+
+}
+  
+
+#btn-next{
+
+    color: #F5F5F5;
+    background-color: #D7D7D7;
+    border: none;
+    transition: box-shadow 300ms ease-in-out;
+
+}
+
+
+#btn-cancel{
+
+    color:#A0A0A0;
+    background-color: #F4F4F4;
+    border: none;
+    transition: box-shadow 300ms ease-in-out;
+
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sansita:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <title>Scrum Calendar</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="stylesheet" href="src/variables.css" />
+    <script src="src/app.js" type="module"></script>
+  </head>
+  <body>
+    <div id="main-container">
+      <div id="cabecalho">
+        <h1><span id="realce">Scrum </span>Calendar</h1>
+        <img src="src/static/imgs/calendario.jpeg" />
+      </div>
+      <div id="corpo" class="component-container">
+        <div class="component calendar-container">
+          <iframe
+            src="src/components/calendar/index.html"
+            frameborder="0"
+            id="calendar-iframe"
+          ></iframe>
+        </div>
+        <div class="component menu-container">
+          <iframe
+            src="src/components/menu/index.html"
+            frameborder="0"
+            id="menu-iframe"
+          ></iframe>
+        </div>
+      </div>
+      <div id="rodape">
+        Copyright <span id="realce">© Scrum Calendar </span> 2022
+      </div>
+    </div>
+    <div class="modal">
+      <iframe
+        src="src/components/modal/index.html"
+        frameborder="0"
+        id="modal-iframe"
+      ></iframe>
+    </div>
+  </body>
+</html>

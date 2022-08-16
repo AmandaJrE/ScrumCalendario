@@ -1,0 +1,73 @@
+<link rel="stylesheet" href="./style.css" />
+<script src="./projectTasks.js" type="module"></script>
+<div class="Week_Post" id="New_Week_add">
+  <div id="task-page-1" page="1" class="Form_container">
+    <h1>Entregas Semanais</h1>
+    <div class="entregas" id="tasks-container">
+      <div id="_entrega_base" class="entrega-item" style="display: none">
+        <input
+          class="entrega-label"
+          type="text"
+          placeholder="Entrega Semanal #1"
+        />
+      </div>
+      <div id="entrega-1" class="entrega-item">
+        <input
+          class="entrega-label"
+          type="text"
+          placeholder="Entrega Semanal #1"
+        />
+      </div>
+    </div>
+
+    <div class="button">
+      <input
+        id="btn-add-task"
+        class="button btn-next"
+        type="button"
+        name="btn-add-task"
+        value="Adicionar Entrega"
+      />
+    </div>
+    <div class="button page-btn">
+      <input
+        id="btn-cancel"
+        class="button btn-cancel"
+        type="button"
+        name="btn-cancelar"
+        value="Cancelar"
+      />
+
+      <input
+        id="btn-next"
+        class="button btn-next"
+        type="button"
+        name="btn-next"
+        value="Proximo"
+      />
+    </div>
+  </div>
+  <!-- page div -->
+  <div id="task-page-2" page="2" class="Form_container" style="display: none">
+    <h1>Tarefas por Entrega</h1>
+    <div class="entregas" id="tasks-container-2"></div>
+
+    <div class="button page-btn">
+      <input
+        id="btn-prev"
+        class="button btn-cancel"
+        type="button"
+        name="btn-prev"
+        value="Anterior"
+      />
+
+      <input
+        id="btn-save"
+        class="button btn-next"
+        type="button"
+        name="btn-save"
+        value="Salvar"
+      />
+    </div>
+  </div>
+</div>

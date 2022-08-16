@@ -1,0 +1,51 @@
+<div class="menu-container">
+  <!--botões-->
+  <!-- <div class="cabecalho">
+    <button>Configurações</button>
+    <button>Filtro avançado</button>
+  </div> -->
+  <!--Checkbox boxshadowI-->
+  <div class="exibicao">
+    <h2>Exibição</h2>
+    <div class="checkbox-container">
+      <div class="week">
+        <input type="checkbox" id="scales" name="scales" checked />
+        <label for="scales">Semana</label>
+      </div>
+      <div class="mount">
+        <input type="checkbox" id="horns" name="horns" />
+        <label for="horns">Mês</label>
+      </div>
+    </div>
+  </div>
+  <!--Checkbox boxshadowII-->
+  <div class="filter">
+    <h2>Filtro</h2>
+    <div class="checkbox-container">
+      <div class="event">
+        <input type="checkbox" id="events" name="events" checked />
+        <label for="events">Evento</label>
+      </div>
+      <div class="router">
+        <input type="checkbox" id="routine" name="routine" />
+        <label for="routine">Rotina</label>
+      </div>
+      <div class="project">
+        <input type="checkbox" id="project" name="project" />
+        <label for="project">Projeto</label>
+      </div>
+    </div>
+  </div>
+  <div class="controls">
+    <div class="week-selector">
+      <div class="prev week-selector-btn button"><</div>
+      <div class="next week-selector-btn button">></div>
+    </div>
+    <div class="add-btn-wrapper">
+      <div class="add-btn button" id="add-btn">Adicionar</div>
+    </div>
+  </div>
+</div>
+<link rel="stylesheet" href="./style.css" />
+<link rel="stylesheet" href="../../variables.css" />
+<script src="./menu.js" type="module"></script>

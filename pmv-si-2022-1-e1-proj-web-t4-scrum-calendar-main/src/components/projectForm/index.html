@@ -1,0 +1,184 @@
+<link rel="stylesheet" href="./style.css" />
+<script src="./projectForm.js" type="module"></script>
+<div id="form-add">
+  <form class="form-container">
+    <span class="form-label" show-mode="projeto">Novo Projeto</span>
+    <span class="form-label" show-mode="projeto-2,rotina-2" id="dynamic-label"
+      >Novo Projeto</span
+    >
+    <span class="form-label" show-mode="rotina">Nova Atividade de Rotina</span>
+    <span class="form-label" show-mode="evento">Novo Evento</span>
+
+    <!-- PAGE 1 -->
+
+    <input
+      class="field"
+      id="nomeForm"
+      type="text"
+      show-mode="projeto,rotina,evento"
+      name="nome"
+      placeholder="Nome"
+    />
+    <input
+      class="field"
+      id="descForm"
+      show-mode="projeto,evento,rotina"
+      type="text"
+      name="descricao"
+      placeholder="Descrição"
+    />
+    <input
+      id="autorForm"
+      type="text"
+      name="autor"
+      class="field"
+      show-mode="projeto"
+      placeholder="Autor"
+    />
+    <input
+      class="field"
+      id="eventDateIni"
+      type="datetime-local"
+      name="eventDateIni"
+      show-mode="evento"
+      placeholder="De: "
+    />
+    <input
+      class="field"
+      id="eventDateEnd"
+      type="datetime-local"
+      name="eventDateEnd"
+      show-mode="evento"
+      placeholder="Até: "
+    />
+    <input
+      class="field"
+      id="rotineDateIni"
+      type="date"
+      name="rotineDateIni"
+      show-mode="rotina-2"
+      placeholder="Data Inicio: "
+    />
+    <input
+      class="field"
+      id="rotineDateEnd"
+      type="date"
+      name="rotineDateEnd"
+      show-mode="rotina-2"
+      placeholder="Data Fim: "
+    />
+    <input
+      class="field"
+      id="rotineTimeIni"
+      type="time"
+      name="rotineTimeIni"
+      show-mode="rotina-2"
+      placeholder="Hora Inicio: "
+    />
+    <input
+      class="field"
+      id="rotineTimeEnd"
+      type="time"
+      name="rotineTimeEnd"
+      show-mode="rotina-2"
+      placeholder="Hora Fim: "
+    />
+    <div
+      class="field checkbox-container"
+      show-mode="rotina-2"
+      default-display-mode="inline-flex"
+    >
+      <div><label for="">Repete: </label></div>
+      <div class="seg-item">
+        <input class="field" type="checkbox" id="seg-chk" name="seg-chk" />
+        <label for="seg-chk">Seg</label>
+      </div>
+      <div class="ter-item">
+        <input class="field" type="checkbox" id="ter-chk" name="ter-chk" />
+        <label for="ter-chk">Ter</label>
+      </div>
+      <div class="qua-item">
+        <input class="field" type="checkbox" id="qua-chk" name="qua-chk" />
+        <label for="qua-chk">Qua</label>
+      </div>
+      <div class="qui-item">
+        <input class="field" type="checkbox" id="qui-chk" name="qui-chk" />
+        <label for="qui-chk">Qui</label>
+      </div>
+      <div class="sex-item">
+        <input class="field" type="checkbox" id="sex-chk" name="sex-chk" />
+        <label for="sex-chk">Sex</label>
+      </div>
+      <div class="sab-item">
+        <input class="field" type="checkbox" id="sab-chk" name="sab-chk" />
+        <label for="sab-chk">Sab</label>
+      </div>
+      <div class="dom-item">
+        <input class="field" type="checkbox" id="dom-chk" name="dom-chk" />
+        <label for="dom-chk">Dom</label>
+      </div>
+    </div>
+
+    <!-- PAGE 2 -->
+    <input
+      class="field"
+      id="dateForm"
+      type="date"
+      name="data"
+      show-mode="projeto-2"
+      placeholder="Data Inicio: "
+    />
+    <input
+      class="field"
+      id="tempoAlocadoForm"
+      type="text"
+      show-mode="projeto-2"
+      name="tempoAlocado"
+      placeholder="Tempo Diário Maximo Alocado (em horas)"
+    />
+    <input
+      class="field"
+      id="prioridadeForm"
+      type="text"
+      show-mode="projeto-2"
+      name="prioridade"
+      placeholder="Prioridade (1 a 10)"
+    />
+
+    <!-- BUTTONS -->
+    <div class="button-container">
+      <input
+        id="btn-cancel"
+        class="button btn-cancel"
+        show-mode="rotina,evento,projeto"
+        type="button"
+        name="btn-cancelar"
+        value="Cancelar"
+      />
+      <input
+        id="btn-anterior"
+        class="button btn-anterior"
+        type="button"
+        show-mode="projeto-2,rotina-2"
+        name="btn-anterior"
+        value="Anterior"
+      />
+      <input
+        id="btn-salvar"
+        class="button btn-salvar"
+        type="button"
+        show-mode="rotina-2,evento,projeto-2"
+        name="btn-salvar"
+        value="Salvar"
+      />
+      <input
+        id="btn-proximo"
+        class="button btn-proximo"
+        show-mode="projeto,rotina"
+        type="button"
+        name="btn-proximo"
+        value="Proximo"
+      />
+    </div>
+  </form>
+</div>
