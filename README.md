@@ -25,7 +25,3 @@ O Scrum Calendar é um Gestor de Projetos Pessoais. Ele ajuda o usuário a gerir
 # Código
 
 <li><a href="src/README.md"> Código Fonte</a></li>
-
-# Apresentação
-
-<li><a href="presentation/README.md"> Apresentação da solução</a></li>
